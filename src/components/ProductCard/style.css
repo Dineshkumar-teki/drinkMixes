@@ -1,0 +1,29 @@
+.productCard {
+  width: inherit;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.productCardImg {
+  width: 100%;
+  border-radius: 10px;
+  height: inherit;
+}
+.productDetails {
+  position: absolute;
+  bottom: -500px;
+  right: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+.productCard:hover .productDetails {
+  bottom: 0;
+}
